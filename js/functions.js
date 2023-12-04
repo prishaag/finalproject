@@ -64,6 +64,19 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+const interestsBoxes = document.querySelectorAll('.interests-box');
+
+interestsBoxes.forEach((box) => {
+    box.addEventListener('mouseenter', () => {
+        box.style.transform = 'scale(1.1)'; 
+        box.style.transition = 'transform 0.3s ease'; 
+    });
+
+    box.addEventListener('mouseleave', () => {
+        box.style.transform = 'scale(1)'; 
+    });
+});
+
 
 
 
